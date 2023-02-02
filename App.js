@@ -1,20 +1,38 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import{ PrimeChecker } from './primeChecker.js';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      //UI(),
+      PrimeChecker()
   );
 }
 
-const styles = StyleSheet.create({
+function UI(){
+  return (
+      <View style ={stylesUI.container}>
+        <Text style={stylesUI.title}>Prime Checker</Text>
+      </View>
+  );
+}
+
+const stylesUI = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    padding: 24,
+    backgroundColor: 'dark blue',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  title: {
+    marginTop: 12,
+    padding: 8,
+    borderColor: 'grey',
+    backgroundColor: 'white',
+    color: 'black',
+    textAlign: 'center',
+    fontSize: 20,
   },
 });
