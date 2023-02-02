@@ -5,28 +5,11 @@ import{ PrimeChecker } from './primeChecker.js';
 
 export default function App() {
   return (
-      //UI(),
+      
       PrimeChecker()
   );
 }
 
 
 
-const stylesUI = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    backgroundColor: 'dark blue',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    marginTop: 12,
-    padding: 8,
-    borderColor: 'grey',
-    backgroundColor: 'white',
-    color: 'black',
-    textAlign: 'center',
-    fontSize: 20,
-  },
-});
+

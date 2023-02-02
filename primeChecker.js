@@ -29,24 +29,14 @@ export function PrimeChecker() {
         keyboardType="numeric"
         onChangeText={text => setNumber(text)}
         value={number}
-        style={{
-          height: 30,
-          padding: 5,
-          borderBottomColor: 'grey',
-          borderBottomWidth: 2,
-          marginBottom: 50,
-        }}
+        style={stylesUI.input}
       />
       <Button 
         title="Check" 
         onPress={handleSubmit} 
-        style={{
-          color: 'black',
-          height: 30
-          
-        }}
+        style={stylesUI.button}
       />
-      <Text>{result}</Text>
+      <Text style={stylesUI.output}>{result}</Text>
     </View>
     
     
@@ -74,13 +64,22 @@ const stylesUI = StyleSheet.create({
     fontweight: 'bold',
   },
   input:{
-
+    height: 30,
+    padding: 5,
+    borderBottomColor: 'grey',
+    borderBottomWidth: 2,
+    marginBottom: 50,
   },
   button: {
-
+    color: 'black',
+    height: 30,
+    marginBottom: 10,
   },
-  outpu:{
-
+  output:{
+    marginTop: 5,
+    paddiing: 20,
+    borderTopColor: 'black',
+    borderTopWidth: 10,
   },
 });
 
