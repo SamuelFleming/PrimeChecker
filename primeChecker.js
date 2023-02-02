@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 
+//
 const isPrime = num => {
   if (num <= 1) return false;
   for (let i = 2; i < num; i++) {
@@ -15,6 +16,7 @@ export function PrimeChecker() {
 
   const handleSubmit = () => {
     const isNumPrime = isPrime(Number(number));
+    //format output string
     setResult(isNumPrime ? `${number} is a prime number` : `${number} is not a prime number`);
   };
 
@@ -75,6 +77,9 @@ const stylesUI = StyleSheet.create({
 
   },
   button: {
+
+  },
+  outpu:{
 
   },
 });
