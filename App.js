@@ -10,13 +10,7 @@ export default function App() {
   );
 }
 
-function UI(){
-  return (
-      <View style ={stylesUI.container}>
-        <Text style={stylesUI.title}>Prime Checker</Text>
-      </View>
-  );
-}
+
 
 const stylesUI = StyleSheet.create({
   container: {
